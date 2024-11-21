@@ -1,0 +1,52 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  height: 100vh;
+}
+
+.main > button {
+  margin: 4px 4px;
+}
+
+.carousel {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.img-style {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: opacity 1s ease-in-out; 
+  opacity: 0;
+}
+
+.img-style.active {
+  opacity: 1;
+}
+
+.disable-btn {
+  background-color: rgb(212, 177, 244);;
+  border-radius: 8px;
+  padding: 4px;
+  color: white;
+}
+
+.active-btn{
+  padding: 4px;
+  color: white;
+  background-color: rgb(153, 61, 238);
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+.active-btn:hover {
+  background-color: #7804aa; /* Green */
+  color: white;
+}
